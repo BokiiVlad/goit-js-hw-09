@@ -1,0 +1,72 @@
+.feedback-form {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: auto;
+}
+.form-email {
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  gap: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.form-massage {
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  gap: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.form-button {
+  background: #4e75ff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.form-style {
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 8px 16px;
+  height: 40px;
+  width: 360px;
+  border-color: grey;
+  border: 1px solid grey;
+}
+.text-area {
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  border-color: grey;
+  resize: none;
+}
+
+.form-button:hover {
+  background: #3b5fc4;
+}
+
+.form-email input:focus,
+.text-area:focus,
+.form-style:focus {
+  outline: none;
+  border-color: #4e75ff;
+}
