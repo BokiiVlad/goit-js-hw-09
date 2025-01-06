@@ -27,10 +27,20 @@ const onFormField = event => {
     formData[nameValue] = inputValue;
     localStorage.setItem("feedback-form-state", JSON.stringify(formData));
 };
-formArea.addEventListener("change", onFormField);
+formArea.addEventListener("input", onFormField);
+
 const subActive = event => {
     event.preventDefault()
+    if (!formData.email.trim() || !formData.message.trim()) {
+        alert("Fill please all fields");
+        return;
+    }
+    console.log(formData);
     localStorage.removeItem("feedback-form-state");
+    formData = {
+        email: "",
+        message: ""
+    };
     formArea.reset()
 }
 formArea.addEventListener("submit", subActive)
